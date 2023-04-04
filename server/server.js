@@ -13,7 +13,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-const MONGODB_URI="mongodb://localhost:27017/EmployeeDatabase"
+const MONGODB_URI="mongodb+srv://kirtan:test%40123@cluster0.islidyz.mongodb.net/?retryWrites=true&w=majority"
 
 // Connect to MongoDB
 mongoose
