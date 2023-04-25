@@ -36,7 +36,7 @@ const CreateEmployee = () => {
     event.preventDefault();
 
     axios
-      .post("http://localhost:5000/employees/", formData)
+      .post("http://3.110.106.6:5000/employees/", formData)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 

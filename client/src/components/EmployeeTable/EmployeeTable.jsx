@@ -6,7 +6,7 @@ const EmployeeTable = ({ employeeData }) => {
   const [data, setData] = useState(employeeData);
   const handleRemove = (id) => {
     axios
-      .delete(`http://localhost:5000/employees/${id}`)
+      .delete(`http://3.110.106.6:5000/employees/${id}`)
       .then((res) => {
         console.log(res);
         const newData = data.filter((emp) => emp._id !== id);

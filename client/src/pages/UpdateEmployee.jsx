@@ -33,7 +33,7 @@ const UpdateEmployee = () => {
     event.preventDefault();
 
     axios
-      .patch(`http://localhost:5000/employees/${id}`, {
+      .patch(`http://3.110.106.6:5000/employees/${id}`, {
         ...formData,
         _id: id
       })

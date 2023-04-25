@@ -8,7 +8,7 @@ const EmployeeList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/employees/")
+      .get("http://3.110.106.6:5000/employees/")
       .then((res) => {
         const data = res.data;
         setEmployeeData(data);
