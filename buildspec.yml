@@ -9,9 +9,12 @@ phases:
       - cp client/package.json .
       - cd client
       - npm install
+      - cd ..
   build:
     commands:
+      - cd client
       - npm run build
+      - cd ..
 artifacts:
   files:
     - '**/*'
