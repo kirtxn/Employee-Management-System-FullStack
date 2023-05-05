@@ -16,6 +16,7 @@ phases:
       - npm run build
       - cd ..
 artifacts:
+  type: zip
   files:
     - '**/*'
-  base-directory: 'client/build'
+
