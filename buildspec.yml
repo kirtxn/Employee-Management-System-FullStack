@@ -6,6 +6,7 @@ phases:
       nodejs: 18
   pre_build:
     commands:
+      - cp client/package.json .
       - cd client
       - npm install
   build:
